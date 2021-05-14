@@ -1,7 +1,11 @@
 console.log(`Clase 1 - semana 5`)
 
+// ========================== Declaracion de variables ========================== //
+
 let productsDisplay = []
 let botonOrdenar = document.getElementById("ordenar")
+
+// ========================== Declaracion de funciones ========================== //
 
 let cargaInicio = () => {
     fetch('https://fakestoreapi.com/products')
@@ -86,8 +90,12 @@ let ordenar = (products) => {
     return products
 }
 
+// ========================== Llamada a funciones ========================== //
+
 cargaInicio()
 crearSelect()
+
+// ========================== Declaraciones addEventListener ========================== //
 
 document.getElementById("mostrarProductos").addEventListener("click", () => {
     refresh()
