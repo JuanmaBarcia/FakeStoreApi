@@ -69,3 +69,12 @@ document.getElementById("select").addEventListener("change", (data) => {
         }
     })
 })
+
+document.getElementById("ordenar").addEventListener("click", () => {
+    let txt = document.getElementById("ordenar");
+    if (txt.innerHTML === "Ordenar por precio ascendente") {
+        txt.innerHTML = "Ordenar por precio descendente";
+    } else {
+        txt.innerHTML = "Ordenar por precio ascendente";
+    }
+})
